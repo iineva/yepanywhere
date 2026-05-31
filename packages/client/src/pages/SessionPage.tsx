@@ -1081,6 +1081,7 @@ function SessionPageContent({
                     onShare={handleShare}
                     onOpenTerminal={() => setShowTerminalModal(true)}
                     terminalAvailable={!!project?.path}
+                    terminalCount={project?.terminalCount ?? 0}
                     useFixedPositioning
                     useEllipsisIcon
                   />
